@@ -4,7 +4,7 @@ Plugin Name: bbPM Compose
 Plugin URI: https://samelh.com
 Description: bbPress Messages Compose Helper
 Author: Samuel Elh
-Version: 0.1
+Version: 0.1.2
 Author URI: https://samelh.com
 */
 
@@ -227,8 +227,9 @@ class Loader
         	}
        	}
 
-    	self::sendForm($args);
-
+       	if ( $user_id === $current_user->ID ) {
+	    	self::sendForm($args);
+	    }
     }
 
     public static function sendForm($args)
