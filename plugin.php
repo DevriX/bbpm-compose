@@ -60,6 +60,8 @@ class Loader
 	    	add_action( 'wp_ajax_bbpm-compose-send', array( $This, 'ajaxSend' ) );
 	    	// profile
 	    	add_action( 'bbp_template_after_user_profile', array( $This, 'embedProfileFields' ) );
+	    	// admin
+	    	add_filter( "plugin_action_links_" . plugin_basename(__FILE__), array( $This, "metaUri" ) );
     	}
     }
 
@@ -279,6 +281,13 @@ class Loader
     	
     	</form>
     	<?php
+    }
+
+    public static function metaUri( $links )
+    {
+    	return array(
+    		'<a href="https://github.com/elhardoum/bbpm-compose/">' . __('Documentation') . '</a>',
+    	) + $links;
     }
 }
 

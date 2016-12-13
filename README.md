@@ -1,5 +1,5 @@
-# bbpm-compose
-bbPress Messages Compose Helper
+# bbPM Compose
+bbPress Messages Compose Helper.
 
 Helps you easily compose and send messages to bbPress users with [bbPress Messages](https://samelh.com/wordpress-plugins/bbpress-messages/) plugin.
 
