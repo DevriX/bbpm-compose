@@ -1,6 +1,8 @@
 # bbPM Compose
 bbPress Messages Compose Helper.
 
+<em>Note: This addon works for bbPress Message versions older than 2.0</em>
+
 Helps you easily compose and send messages to bbPress users with [bbPress Messages](https://samelh.com/wordpress-plugins/bbpress-messages/) plugin.
 
 With AJAX, you can search and select recipients, or select all users with specific role, or even select all site users.
